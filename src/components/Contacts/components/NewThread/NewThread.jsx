@@ -61,7 +61,7 @@ const NewThread = () => {
     <>
       <button id="new-thread" onClick={() => setPopupVisible(true)}>
         <MdOutlineChat size={20} />
-        <p style={{ marginLeft: "0.5rem" }}>New Chat</p>
+        <p style={{ marginLeft: "0.5rem" }}>New Thread</p>
       </button>
 
       <div
@@ -74,7 +74,15 @@ const NewThread = () => {
         style={{ display: popupVisible ? "block" : "none" }}
         id="new-thread-popup"
       >
-        <p>New Thread</p>
+        <p
+          style={{
+            fontWeight: "bold",
+            fontSize: "1.5rem",
+            marginBottom: "1rem",
+          }}
+        >
+          New Thread
+        </p>
         <div
           style={{
             width: "100%",

@@ -65,11 +65,11 @@ const Details = () => {
               borderRadius: "50%",
               marginBottom: "1rem",
             }}
-            src="https://via.placeholder.com/50"
+            src="https://picsum.photos/500"
           />
 
           <div style={{ textAlign: "center" }}>
-            <p style={{ marginBottom: "0.5rem" }}>username@mail.com</p>
+            <p style={{ marginBottom: "0.5rem" }}>chrisrock@mail.com</p>
             <p
               style={{
                 marginBottom: "0.5rem",
@@ -77,7 +77,7 @@ const Details = () => {
                 fontSize: "1.5rem",
               }}
             >
-              Username
+              Chris Rock
             </p>
             <p style={{ fontSize: "0.75rem" }}>Online</p>
           </div>

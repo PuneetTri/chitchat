@@ -62,12 +62,14 @@ const Messages = ({ data, setData, intendedRecipient }) => {
           </button>
           <img
             id="user-profile-img"
-            src="https://via.placeholder.com/50"
+            src="https://picsum.photos/500"
             alt="user"
             style={{ marginRight: "0.5rem" }}
           />
           <div>
-            <p style={{ fontSize: "0.875rem", fontWeight: "bold" }}>Username</p>
+            <p style={{ fontSize: "0.875rem", fontWeight: "bold" }}>
+              Chris Rock
+            </p>
             <p style={{ fontSize: "0.75rem" }}>Online</p>
           </div>
         </div>
@@ -84,7 +86,10 @@ const Messages = ({ data, setData, intendedRecipient }) => {
       </header>
 
       <div id="messages-logs-container">
-        <div id="messages-logs">
+        <div
+          id="messages-logs"
+          style={{ maxHeight: "calc(100vh - 150px)", overflowY: "auto" }}
+        >
           {data.map((message, index) =>
             message.from !== userData.uid ? (
               <div
@@ -94,7 +99,7 @@ const Messages = ({ data, setData, intendedRecipient }) => {
               >
                 <p>{message.message}</p>
                 <p style={{ fontSize: "0.75rem", marginTop: "0.5rem" }}>
-                  {/* {message.time.toDate().toLocaleTimeString()} */}
+                  12:53 PM
                 </p>
               </div>
             ) : (
@@ -105,7 +110,7 @@ const Messages = ({ data, setData, intendedRecipient }) => {
               >
                 <p>{message.message}</p>
                 <p style={{ fontSize: "0.75rem", marginTop: "0.5rem" }}>
-                  {/* {message.time.toDate().toLocaleTimeString()} */}
+                  12:00 PM
                 </p>
               </div>
             )
