@@ -1,0 +1,192 @@
+#contacts {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#contacts #user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+  transition: margin-top 0.2s ease;
+}
+
+#contacts #user-info #user-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contacts #user-info #extra-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contacts #user-info #extra-btns button {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+#contacts #tab-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+#contacts #user-info #user-profile-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+#contacts #logs {
+  padding: 0.5rem;
+  background-color: #fff;
+  flex: 1;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  padding-bottom: 10rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#contacts #logs .threads {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  transition: background-color 0.2s ease-in-out;
+  position: relative;
+}
+
+#contacts #logs .threads:hover {
+  background-color: #f5f5f5;
+}
+
+#contacts #logs .threads .profile-img-container {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border: 0.15rem solid red; /* Add a red border around the container */
+  border-radius: 50%; /* Make the container round */
+  padding: 0.1rem; /* Add 1px padding inside the container */
+  overflow: hidden;
+}
+
+#contacts #logs .threads .profile-img-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#contacts #logs .threads .thread-message {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+#contacts #logs .threads .thread-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contacts #logs .threads .unread-messages {
+  background-color: red;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#contacts #new-thread {
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  margin: 0.5rem;
+  background-color: #3e66fb;
+  z-index: 10;
+  border: none;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+}
+
+#contacts #new-thread:hover {
+  background-color: #3857a3;
+}
+
+#contacts #navigation-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  position: absolute;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  bottom: 0.5rem;
+  margin: 0.5rem;
+  width: calc(100% - 1rem);
+  z-index: 10;
+}
+
+#contacts #navigation-btns button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#contacts #navigation-btns button:hover {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+#contacts #navigation-btns .selected {
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}

@@ -1,0 +1,113 @@
+#messages {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+#messages header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: #fff;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+#messages-header-user-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#messages-header-user-btns button {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+#messages-header-user-btns img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+
+#messages-header-extra-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#messages-header-extra-btns button {
+  background-color: transparent;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+#messages-logs-container {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 1rem 0.5rem 4rem 0.5rem;
+}
+
+#messages-logs {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-container {
+  background-color: #fff;
+  width: 60%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 2rem 2rem 2rem 0;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.message-container-user {
+  background-color: #3e66fb;
+  width: 60%;
+  padding: 1rem;
+  align-self: flex-end;
+  border-radius: 2rem 2rem 0 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+#messages-input-container {
+  bottom: 0.5rem;
+  background-color: #fff;
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 10;
+  position: absolute;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+#messages-input-container button {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#messages-input-container input {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+}
